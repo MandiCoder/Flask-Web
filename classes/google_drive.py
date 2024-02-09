@@ -2,7 +2,6 @@ from pydrive2.auth import GoogleAuth
 from pydrive2.drive import GoogleDrive
 from os.path import join
 from time import localtime
-import sys
 
 class googleDrive():
     def __init__(self, message_telegram = None) -> None:
