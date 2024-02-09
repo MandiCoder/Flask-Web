@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #282a36;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #282a36;
+    border-radius: 10px;
+}
+
+h1 {
+    /* Cambiar el color del texto a un rosa claro */
+    color: #ff79c6;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding: 15px;
+}
+
+p {
+    /* Cambiar el color del texto a un verde claro */
+    color: #50fa7b;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+input {
+    width: 70%;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    /* Cambiar el color del borde a un morado claro */
+    border: 1px solid #bd93f9;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 20%;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    /* Cambiar el color de fondo a un naranja claro */
+    background-color: #ffb86c;
+    /* Cambiar el color del texto a un gris oscuro */
+    color: #282a36;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    /* Cambiar el color de fondo a un amarillo claro */
+    background-color: #f1fa8c;
+}
+
+/* Puedes usar media queries para ajustar el diseño según el tamaño de la pantalla */
+@media (max-width: 600px) {
+  .contenedor {
+    /* Cambiar la dirección de los elementos a vertical */
+    flex-direction: column;
+  }
+}

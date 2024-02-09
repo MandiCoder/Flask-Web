@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Bienvenid@ a mi Pagina Web</h1>
+        <p>Esta página web fue diseñada por Rey para descargar cosas</p>
+        <form action="/" method="POST">
+            <input type="text" name="texto" placeholder="Insertar URL" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

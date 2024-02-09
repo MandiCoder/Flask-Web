@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivos descargados</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='archivos.css') }}">
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Nombre</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for elemento in elementos %}
+                    <tr>
+                        <td>{{ elemento[0] }}</td>
+                        <td><a href="{{ elemento[1] }}">{{ elemento[2] }}</a></td>
+                        <td><button onclick="location.href='/borrar?file={{ elemento[1] }}'" >Borrar</button></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
