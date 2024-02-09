@@ -6,10 +6,13 @@ authors = ["MandiCoder <baitycasper@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 flask = "^3.0.2"
 requests = "^2.31.0"
 gunicorn = "^21.2.0"
+yt-dlp = "^2023.12.30"
+user-agent = "^0.1.10"
+wget = "^3.2"
 
 
 [build-system]

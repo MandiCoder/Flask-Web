@@ -13,6 +13,7 @@
                 <tr>
                     <th>Número</th>
                     <th>Nombre</th>
+                    <th>Peso</th>
                     <th>Acción</th>
                 </tr>
             </thead>
@@ -21,6 +22,7 @@
                     <tr>
                         <td>{{ elemento[0] }}</td>
                         <td><a href="{{ elemento[1] }}">{{ elemento[2] }}</a></td>
+                        <td>{{ elemento[3] }}</td>
                         <td><button onclick="location.href='/borrar?file={{ elemento[1] }}'" >Borrar</button></td>
                     </tr>
                 {% endfor %}

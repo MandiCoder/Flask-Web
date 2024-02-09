@@ -71,3 +71,10 @@ button:hover {
     flex-direction: column;
   }
 }
+
+@media (max-width: 600px) {
+    .contenedor_gif {
+        width: 150px; /* Ancho del div en dispositivos pequeños */
+        height: 150px; /* Alto del div en dispositivos pequeños */
+    }
+}
