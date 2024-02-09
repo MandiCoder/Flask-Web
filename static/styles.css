@@ -67,14 +67,13 @@ button:hover {
 /* Puedes usar media queries para ajustar el diseño según el tamaño de la pantalla */
 @media (max-width: 600px) {
   .contenedor {
-    /* Cambiar la dirección de los elementos a vertical */
-    flex-direction: column;
+    width: 90%;
   }
-}
 
-@media (max-width: 600px) {
-    .contenedor_gif {
-        width: 150px; /* Ancho del div en dispositivos pequeños */
-        height: 150px; /* Alto del div en dispositivos pequeños */
+  .h1 {
+    font-size: 24px; /* Reduce el tamaño de la fuente h1 en móviles */
+  }
+  .p {
+    font-size: 16px;
     }
 }
